@@ -196,7 +196,7 @@ namespace Stonetip.Geobuf
 						filePath = @"D:\projects\mapture\experiments\gbSharp\geobufSharpConsole\geo\";
 
 						using (var output =
-                               File.Create(string.Format("{0}test.pbf", filePath)))
+                               File.Create($"{filePath}test.pbf"))
 						{
 							var count = gbd.FeatureCollection.Features.Count;
 
