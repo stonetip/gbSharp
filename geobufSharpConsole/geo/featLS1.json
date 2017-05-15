@@ -1,0 +1,22 @@
+{
+	"type": "Feature",
+	"geometry": {
+		"type": "LineString",
+		"coordinates": [[-112,
+		46.7,
+		0],
+		[-112.15,
+		46.59,
+		0],
+		[-112.25,
+		46.45,
+		0]]
+	},
+	"properties": {
+		"GEO_ID": "123",
+		"NAME": "A simple Line",
+		"NEGNUM": -45,
+		"JVAL": {"myval":"foobar"},
+		"DUB": 12.345
+	}
+}

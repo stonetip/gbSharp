@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{07EF81D1-2F86-4C2D-BAE9-FFB1A6BCD508}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>geobufSharp</RootNamespace>
+    <AssemblyName>geobufSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="geo\beaverhead_geo.json" />
+    <None Include="geo\bhead.pbf" />
+    <None Include="geo\coCty.json" />
+    <None Include="geo\coCtyNoD.json" />
+    <None Include="geo\den1b.json" />
+    <None Include="geo\den1b.pbf" />
+    <None Include="geo\denverCounty.json" />
+    <None Include="geo\dpoly1.json" />
+    <None Include="geo\dpoly1.pbf" />
+    <None Include="geo\featLS1.json" />
+    <None Include="geo\featLS1.pbf" />
+    <None Include="geo\featureNoGeom1.json" />
+    <None Include="geo\featureNoGeom1.pbf" />
+    <None Include="geo\featuresTest2.json" />
+    <None Include="geo\featuresTest2.pbf" />
+    <None Include="geo\ft2.pbf" />
+    <None Include="geo\gcol1.json" />
+    <None Include="geo\gcol1.pbf" />
+    <None Include="geo\geomPt.json" />
+    <None Include="geo\geomPt.pbf" />
+    <None Include="geo\geomPtAlt.json" />
+    <None Include="geo\geomPtAlt.pbf" />
+    <None Include="geo\geomPtFromCSharp.pbf" />
+    <None Include="geo\goodFT2.json" />
+    <None Include="geo\goodFT2.pbf" />
+    <None Include="geo\ls1.json" />
+    <None Include="geo\ls1.pbf" />
+    <None Include="geo\mpolys1.json" />
+    <None Include="geo\mpolys1.pbf" />
+    <None Include="geo\mpolysAttr1.json" />
+    <None Include="geo\mpolysAttr1.pbf" />
+    <None Include="geo\mpT1.json" />
+    <None Include="geo\mpT1.pbf" />
+    <None Include="geo\mtctyAll.json" />
+    <None Include="geo\multiLS1.json" />
+    <None Include="geo\multiLS1.pbf" />
+    <None Include="geo\plainPt2.pbf" />
+    <None Include="geo\propsTest.json" />
+    <None Include="geo\propsTest.pbf" />
+    <None Include="geo\roanokeR.json" />
+    <None Include="geo\singlePt1.json" />
+    <None Include="geo\singlePt1.pbf" />
+    <None Include="geo\testOut.pbf" />
+    <None Include="geo\testOutB.pbf" />
+    <None Include="geo\tl_2016_us_county.json" />
+    <None Include="geo\uscty.json" />
+    <None Include="geo\uscty.pbf" />
+    <None Include="geo\uscty500k.json" />
+    <None Include="geo\usctyR.json" />
+    <None Include="geo\usctyR.pbf" />
+    <None Include="geo\us_outline_5m.json" />
+    <None Include="geo\poly1.json" />
+    <None Include="geo\poly1.pbf" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Stonetip.Geobuf\Stonetip.Geobuf.csproj">
+      <Project>{a922b137-2e80-4f4d-9940-0bcb8e81dbf2}</Project>
+      <Name>Stonetip.Geobuf</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties geo_4featuresTest2_1json__JSONSchema="http://json.schemastore.org/geojson" geo_4singlePt1_1json__JSONSchema="http://json.schemastore.org/geojson" geo_4mpolys1_1json__JSONSchema="http://json.schemastore.org/geojson" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

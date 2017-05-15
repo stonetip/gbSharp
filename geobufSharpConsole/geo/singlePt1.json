@@ -1,0 +1,16 @@
+{
+	"geometry": {
+		"type": "Point",
+		"coordinates": [
+			-112,
+			46.58
+		]
+	},
+	"properties": {
+		"GEO_ID": "456",
+		"STATE": 30,
+		"NAME": "Just a point",
+		"CHECKED": false
+	},
+	"type": "Feature"
+}
