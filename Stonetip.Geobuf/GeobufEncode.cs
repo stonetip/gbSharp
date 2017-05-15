@@ -44,8 +44,9 @@ namespace Stonetip.Geobuf
 						var gbd = new Data
 						{
 							Geometry = new Data.Types.Geometry(),
-							Dimensions = 2
-						};
+							Dimensions = 2,
+							Precision = DefaultPrecision // For compression, set to default (relying on SanitizePosition to make all coordinates match decimal places)
+					};
 
 
 
@@ -468,7 +469,7 @@ namespace Stonetip.Geobuf
 
 				var lonPrecision = (uint)GetMinPrecision((decimal)position.Longitude);
 
-                gbData.Precision = 6;// Math.Max(gbData.Precision, Math.Max(latPrecision, lonPrecision));
+               // gbData.Precision = 6;// Math.Max(gbData.Precision, Math.Max(latPrecision, lonPrecision));
 
 				if (position.Altitude != null)
 					gbData.Dimensions = 3;
